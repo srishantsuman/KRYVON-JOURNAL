@@ -15,7 +15,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const API = import.meta.env.VITE_API_URL || "";
+const API = "";
 
 async function apiCall(path: string, body: object) {
   const res = await fetch(`${API}${path}`, {
