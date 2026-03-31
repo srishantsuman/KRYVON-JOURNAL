@@ -31,7 +31,6 @@ interface TradeContextType {
 const TradeContext = createContext<TradeContextType | undefined>(undefined);
 
 const API = import.meta.env.VITE_API_URL || "";
-
 function getToken() {
   return localStorage.getItem("kryvon_token");
 }
