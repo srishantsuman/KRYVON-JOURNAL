@@ -10,7 +10,7 @@
     "server": "node server/index.js",
     "install:server": "cd server && npm install",
     "setup": "npm install && npm run install:server",
-    "start": "npm run build && npm run server"
+    "start": "npm install && cd server && npm install && cd .. && npm run build && node server/index.js"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
